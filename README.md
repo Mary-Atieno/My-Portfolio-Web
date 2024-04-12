@@ -24,7 +24,7 @@ PHP - For making the page interactive.
 
 ## LIVE LINK
 
-Find the deployed app: here
+Find the deployed app: <https://mary-atieno.github.io/My-Portfolio-Web/>
 
 ## MIT License
 

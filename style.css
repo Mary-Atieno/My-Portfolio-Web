@@ -1,0 +1,658 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import 'utilities.css';
+:root{
+--primary: #00ffff;
+--bgDark: rgb(12, 12, 12);
+--white: rgb(250, 250, 250);
+--secondary: rgb(1, 126, 126);
+--bgLight: rgb(190, 181, 181);
+}
+
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+-webkit-font-smoothing: antialiased;
+}
+header{
+background-color:black;
+clip-path: polygon(0 0, 100% 0, 100% 100%, 73% 94%, 0 100%);
+}
+header nav .left a{
+color: var(--primary);
+text-decoration: none;
+margin-right: 3rem;
+text-transform: uppercase;
+font-size: 1.5rem;
+transition: all .2s ease;
+}
+header nav .left a:hover{
+color: var(--white);
+}
+header nav {
+padding: 3rem 0;
+}
+/* m logo styling */
+header nav .logo{
+margin-right: 1rem;
+}
+/* hero sec */
+body{
+font-family:"Cormorant Garamond", serif;
+background-color: black;
+
+}
+.container{
+max-width: 1152px;
+padding: 0 15px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.hero{
+padding-top: 2rem;
+padding-bottom: 3rem;
+}
+
+.hero .left img{
+  width:225.14px;
+height: 400px;
+}
+.hero .right {
+color: var(--white);
+margin-top: -7rem;
+}
+.hero .right h6{
+font-size: 1.5rem;
+color: var(--primary);
+margin-bottom: 0.5rem;
+}
+.hero .right h1{
+font-size: 4rem;
+font-weight: 100;
+line-height: 1.2;
+margin-bottom: 2rem;
+}
+.hero .right h1 span{
+color: var(--primary);
+}
+.hero .right p{
+line-height: 1.9;
+margin-bottom: 2rem;
+}
+
+.flex{
+display: flex;
+}
+.items-centre{
+align-items: center;
+}
+.justify-between{
+justify-content: space-between;
+}
+.justify-center{
+justify-content: center;
+}
+.justify-right{
+justify-content: right;
+}
+/* contact and cv button */
+.btn{
+padding: 0.6rem 2rem;
+font-size: 1rem;
+font-weight: 600;
+border: 2px solid var(--primary);
+outline: none;
+cursor: pointer;
+text-transform: uppercase;
+transition: all .2s ease;
+}
+.btn-primary{
+background-color: transparent;
+color: var(--primary);
+border-color: var(--primary);
+margin-top: -15rem;
+}
+.btn-primary:hover{
+background: var(--primary);
+color: var(--secondary);
+border-color: var(--primary);
+}
+/* introduction */
+.flex-1{
+flex: 1;
+padding: 30px;
+color: var(--white);
+
+}
+/* contact button */
+.right{
+  color: var(--white);
+  align-items: center;
+  margin: auto;
+  padding: 4rem;
+}
+
+.btn-secondary{
+background: transparent;
+color: var(--primary);
+border-color: var(--primary);
+}
+.btn-secondary:hover{
+background: var(--primary);
+color: var(--secondary);
+}
+
+ /* about section */
+section{
+padding: 6rem;
+}
+section.about h1{
+color: var(--primary);
+margin-bottom: 1rem;
+font-size: 1.6rem;
+font-weight: 600;
+}
+section.about h1 span{
+color: var(--primary);
+}
+section.about h3{
+font-size: 1.5rem;
+margin-bottom: 1rem;
+font-weight: 600;
+}
+section.about p{
+font-family:"Cormorant Garamond", serif;
+color: white;
+line-height: 1.9rem;
+margin-bottom: 2rem;
+}
+/* social links */
+section.about .socials{
+display: flex;
+}
+
+section.about .socials a{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 35px;
+margin-right: 0.8rem;
+border-radius: 50%;
+padding: 1rem;
+}
+section.about .socials a:hover{
+background: transparent;
+border-radius: 60%;
+width: 40px;
+padding: 1rem;
+}
+
+/* my projects  */
+.Projects h5 {
+    font-family:"Cormorant Garamond", serif;
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin-bottom: 20px;
+    padding: 2rem;
+}
+
+.Projects h4 {
+  font-family:"Cormorant Garamond", serif;
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* project links button */
+.Projects .portfolio-links ion-icon {
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--white);
+    float: left;
+    padding: 0.6rem 2rem;
+    background-color: transparent;
+    color: var(--primary);
+    border-color: var(--primary);
+    column-gap: normal;  
+    border: 2px solid var(--primary);
+    outline: none;
+    cursor: pointer;
+    transition: all .2s ease;
+
+}
+
+.Projects .portfolio-links :hover {
+    background: var(--primary);
+    color: var(--secondary);
+    border-color: var(--primary);
+}
+
+/* projects section */
+section.Projects{
+background: black;
+    display: block;
+    unicode-bidi: isolate;
+}
+
+/* project heading */
+.Projects-head{
+font-family:"Cormorant Garamond", serif;
+text-align: center;
+margin-bottom: 1rem;
+line-height: 0.5rem;
+color: var(--primary);
+font-weight: 800px;
+font-size: xx-large;
+ 
+}
+
+/* projects paragragh */
+.Projects-head + p{
+color: var(--white);
+font-family:"Cormorant Garamond", serif;
+margin-bottom: 1rem;
+text-align: center;
+font-weight: 800;
+font-size: xx-large;
+
+}
+/* project image stylings */
+.card img{
+width: 400px;
+height: 184.83px;
+background:white;
+display: block;
+
+ }
+/* container project */
+.row.Project-container{
+  display: flex;
+  margin-top: auto;
+  margin-right: -1.5rem;
+  margin-left: -1.5rem;
+  row-gap: 5rem;
+
+}
+
+.card{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+/* Skills section */
+.Skills-head{
+font-family:"Cormorant Garamond", serif;
+text-align: center;
+margin-bottom: 1rem;
+line-height: 0.5rem;
+color: var(--primary);
+font-weight: 800px;
+font-size: xx-large;
+
+}
+/* skills paragragh */
+.Skills-head + p{
+color: var(--white);
+font-family:"Cormorant Garamond", serif;
+margin-bottom: 1rem;
+text-align: center;
+font-weight: 800;
+font-size: xx-large;
+
+}
+
+/* skills */
+#skills {
+  margin: 2rem 0;
+}
+
+#skills h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+#skills ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin: -0.5rem;
+}
+
+#skills li {
+  flex-basis: calc(33.33% - 1rem);
+  margin: 0.5rem;
+  background-color: #f2f2f2;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+#skills h3 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+#skills p {
+  margin: 0;
+  font-size: 1.125rem;
+}
+
+/* contact information section */
+.Contact-head{
+font-family:"Cormorant Garamond", serif;
+text-align: center;
+margin-bottom: 1rem;
+line-height: 0.5rem;
+color: var(--primary);
+font-weight: 800px;
+font-size: xx-large;
+
+}
+/* contact info paragragh */
+.Contact-head + p{
+color: var(--white);
+font-family:"Cormorant Garamond", serif;
+margin-bottom: 1rem;
+text-align: center;
+font-weight: 800;
+font-size: xx-large;
+
+}
+
+ /* contact form page styling */  
+.contact-form {
+  width: 300px;
+  margin: auto;
+  padding: 20px;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: black;
+  border: 1px solid var(--primary);
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+}
+
+.contact-form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 3px;
+  background-color: transparent;
+  color: var(--primary);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.contact-form input:hover{
+background: var(--primary);
+color: var(--secondary);
+border-color: var(--primary);
+}
+
+
+/* resume styling */
+/* Fonts */
+
+/* Family */
+h1 { 
+  font-family:"Cormorant Garamond", serif;
+
+}
+
+h2 { /* Contact, Skills, Education, About me, Work Experience */
+font-family:"Cormorant Garamond", serif;
+}
+
+h3 { /* Accountant */
+font-family:"Cormorant Garamond", serif;
+}
+
+.jobPosition span, 
+.projectName span {
+font-family:"Cormorant Garamond", serif;
+
+}
+
+.smallText, 
+.smallText span, 
+.smallText p, 
+.smallText a {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: justify;
+}
+
+/* End Family */
+
+/* Colors */
+h1 { 
+  color: var(--primary); 
+}
+
+.leftPanel, 
+.leftPanel a {
+  color: white;
+  text-decoration: none;
+}
+
+.leftPanel h2 {
+  color: var(--primary);
+}
+
+/* End Colors */
+
+/* Sizes */
+h1 { 
+  font-weight: 300; 
+  margin-bottom: 0.2cm;
+  margin-top: 0.2cm;
+  /* text-transform: uppercase;  */
+}
+
+h2 {
+  margin-top: 0.1cm;
+  margin-bottom: 0.1cm;
+}
+
+.leftPanel, 
+.leftPanel a {
+  font-size: 0.38cm;
+}
+
+.projectName span, 
+.jobPosition span {
+  font-size: 0.35cm;
+}
+
+.smallText, 
+.smallText span, 
+.smallText p, 
+.smallText a {
+  font-size: 0.35cm;
+}
+
+.leftPanel .smallText, 
+.leftPanel .smallText, 
+.leftPanel .smallText span, 
+.leftPanel .smallText p, 
+.smallText a {
+  font-size: 0.45cm;
+}
+
+.contactIcon {
+  width: 0.5cm;
+  text-align: center;
+}
+
+p {
+  margin-top: 0.05cm;
+  margin-bottom: 0.05cm;
+}
+/* End Sizes */
+
+.bolded {
+  font-weight: bold;
+}
+
+.white {
+  color: white;
+}
+/* End Fonts */
+
+/* Layout */
+
+/* Printing */
+page {
+  background: white;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+}
+
+page[size="A4"] {  
+  width: 21cm;
+  height: 29.7cm; 
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.leftPanel {
+  width: 27%;
+  background-color: black;
+  padding: 0.7cm;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rightPanel {
+  width: 73%;
+  padding: 0.7cm;
+}
+
+.leftPanel img {
+  width: 4cm;
+  height: 4cm;
+  margin-bottom: 0.7cm;
+  border-radius: 50%;
+  border: 0.15cm solid white;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.leftPanel .details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+/* skills sec */
+.skill {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.bottomLineSeparator {
+  border-bottom: 0.05cm solid var(--primary);
+}
+/* years of experience */
+.yearsOfExperience {
+  width: 1.6cm;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.alignleft {
+  text-align: left !important;
+  width: 1cm;
+}
+
+.alignright {
+  text-align: right !important;
+  width: 0.6cm;
+  margin-right: 0.1cm
+}
+
+.workExperience>ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.workExperience>ul>li {
+  position: relative;
+  margin: 0;
+  padding-bottom: 0.5cm;
+  padding-left: 0.5cm;
+}
+
+.workExperience>ul>li:before {
+  background-color: black;
+  width: 0.05cm;
+  content: '';
+  position: absolute;
+  top: 0.1cm;
+  bottom: -0.2cm; /* change this after border removal */
+  left: 0.05cm;
+}
+
+.workExperience>ul>li::after {
+  content: '';
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: -0.09cm;
+  top: 0;
+  width: 0.35cm;
+  height: 0.35cm;
+}
+
+.jobPosition {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.item {
+  padding-bottom: 0.7cm;
+  padding-top: 0.7cm;
+}
+
+.item h2{
+  margin-top: 0;
+}
+
+.lastParagrafNoMarginBottom {
+  margin-bottom: 0;
+}
+
+.workExperience>ul>li ul {
+  padding-left: 0.5cm;
+  list-style-type: disc;
+}
+/*End Layout*/
+
+/* rating stars */
+
